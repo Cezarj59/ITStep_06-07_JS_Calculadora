@@ -1,0 +1,31 @@
+#calculadora {
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(155, 148, 148);
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#calculadora input {
+    font-size: x-large;
+    width: 90%;
+    height: 3rem;
+}
+
+#inputVisor2{
+    text-align: right;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+#inputVisor{
+margin-top: 0;
+border-top: none;
+}
+
+button{
+    margin-top: 5px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/calculadora.css">
+</head>
+
+<body>
+
+    <div id="calculadora">
+        <div>
+            <input type="text" id="inputVisor2">
+        </div>
+        <div>
+            <input type="text" id="inputVisor">
+        </div>
+
+        <div class="row">
+            <!-- Clear/Limpar -->
+            <div class="col-md-12">
+                <button type="button" class="btn btn-warning" onclick="btn_inverter()">
+                    +/-
+                </button>
+            </div>
+
+            <!-- Clear/Limpar -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-danger" onclick="btn_clear()">
+                    C
+                </button>
+            </div>
+
+            <!-- Potenciação -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('pot')">
+                    X<sup>2</sup>
+                </button>
+            </div>
+
+
+            <!-- Raiz Quadrada -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('rad')">
+                    &radic;
+                </button>
+            </div>
+
+            <!-- Divisão -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('/')">
+                    &divide
+                </button>
+            </div>
+
+            <!-- Numero 7 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(7)">
+                    7
+                </button>
+            </div>
+
+            <!-- Numero 8 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(8)">
+                    8
+                </button>
+            </div>
+
+            <!-- Numero 9 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(9)">
+                    9
+                </button>
+            </div>
+
+            <!-- Multiplicação -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('x')">
+                    x
+                </button>
+            </div>
+
+            <!-- Numero 4 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(4)">
+                    4
+                </button>
+            </div>
+
+            <!-- Numero 5 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(5)">
+                    5
+                </button>
+            </div>
+
+            <!-- Numero 6 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(6)">
+                    6
+                </button>
+            </div>
+
+            <!-- Subtração -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('-')">
+                    -
+                </button>
+            </div>
+
+            <!-- Numero 1 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(1)">
+                    1
+                </button>
+            </div>
+
+            <!-- Numero 2 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(2)">
+                    2
+                </button>
+            </div>
+
+            <!-- Numero 3 -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(3)">
+                    3
+                </button>
+            </div>
+
+            <!-- Soma -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('+')">
+                    +
+                </button>
+            </div>
+
+            <!-- Zero -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-dark" onclick="btn_numero(0)">
+                    0
+                </button>
+            </div>
+
+            <!-- Virgula -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_numero(',')">
+                    ,
+                </button>
+            </div>
+
+
+
+            <!-- Porcentagem -->
+            <div class="col-md-3">
+                <button type="button" class="btn btn-dark" onclick="btn_operador('%')">
+                    %
+                </button>
+            </div>
+
+            <!-- Igual -->
+            <div class=" col-md-3">
+                <button type="button" class="btn btn-success" onclick="igual()">
+                    =
+                </button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/calculadora.js"></script>
+</body>
+
+</html>
